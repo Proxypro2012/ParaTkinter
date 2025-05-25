@@ -18,7 +18,7 @@
 ```bash
 pip install paratkinter
 ```
-## Setup
+## 🛠️ Setup
 ```bash
 from parallax import ParallaxManager
 ```
