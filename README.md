@@ -17,8 +17,41 @@
 
 ```bash
 pip install paratkinter
+# If customtkinter is not installed: 'pip install customtkinter'
 ```
 ## 🛠️ Setup
 ```bash
+import customtkinter
 from parallax import ParallaxManager
 ```
+
+
+
+## Initialization
+```bash
+app = ctk.CTk()
+parallax = ParallaxManager(app, easing=0.1)
+```
+- Initialize the Parallax Layout using a CustomTkinter app
+- Configure the parallax using easing
+
+
+## Add Layers
+```bash
+label_bg = ctk.CTkLabel(app, text="Back Layer", font=("Arial", 22))
+label_mid = ctk.CTkLabel(app, text="Mid Layer", font=("Arial", 28))
+label_fg = ctk.CTkLabel(app, text="Front Layer", font=("Arial", 36, "bold"))
+
+parallax.add_layer(label_bg, base_relx=0.5, base_rely=0.3, depth=0.01)
+parallax.add_layer(label_mid, base_relx=0.5, base_rely=0.4, depth=0.03)
+parallax.add_layer(label_fg, base_relx=0.5, base_rely=0.5, depth=0.06)
+
+```
+💡 Tips
+- Lower depth = slower movement (background)
+
+- Higher depth = faster movement (foreground)
+
+- easing controls transition smoothness (try 0.05 to 0.2)
+
+Enjoy building awesome parallax applications with ParaTkinter!
