@@ -55,3 +55,6 @@ parallax.add_layer(label_fg, base_relx=0.5, base_rely=0.5, depth=0.06)
 - easing controls transition smoothness (try 0.05 to 0.2)
 
 Enjoy building awesome parallax applications with ParaTkinter!
+---
+Known Bugs
+- Hovering your mouse pointer on any widget in the parallax layout automatically shifts the entire layout to the left. Working on a fix, if anyone could help please let me know.
