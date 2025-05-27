@@ -21,7 +21,7 @@ pip install paratkinter
 ```
 ## 🛠️ Setup
 ```bash
-import customtkinter
+import customtkinter as ctk
 from parallax import ParallaxManager
 ```
 
